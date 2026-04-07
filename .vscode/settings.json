@@ -1,0 +1,12 @@
+{
+    "appService.defaultWebAppToDeploy": "",
+    "appService.deploySubpath": "zide-backend-auth-service",
+    "python.defaultInterpreterPath": "${workspaceFolder}/zide-backend-jobs-service/.venv/bin/python",
+    "files.watcherExclude": {
+        "**/node_modules/**": true
+    },
+    "search.exclude": {
+        "**/node_modules": true
+    },
+    "github-actions.workflows.pinned.refresh.enabled": false
+}
