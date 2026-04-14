@@ -1,0 +1,32 @@
+From 83020af67eec217d4144c19746fa4bef610ee204 Mon Sep 17 00:00:00 2001
+From: Zidepeople <admin@zidepeople.com>
+Date: Tue, 14 Apr 2026 03:42:52 +0100
+Subject: [PATCH] docs: clarify payment-service scaffold status and active
+ service ownership
+
+---
+ README.md | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+diff --git a/README.md b/README.md
+index 927a3ce..8861d50 100644
+--- a/README.md
++++ b/README.md
+@@ -2,6 +2,14 @@
+ ## Zide Payment Service
+ ### Overview
+ 
++Status: This repository is currently a scaffold and is not the active runtime payment API in this workspace.
++
++Active payment and wallet processing currently runs in:
++- zide-backend-jobs-service (job payment orchestration and settlement queue)
++- zide-backend-auth-service (wallet/reward operations)
++
++Until this service is fully implemented and integrated, use the active services above for payment-related APIs.
++
+ >> The Zide Payment Service is a microservice designed to handle all payment processing tasks for the Zide platform. It supports integration with multiple payment gateways, provides secure transaction management, and includes features such as transaction logging and refund processing.
+ 
+ >>In the data_access folder, you can create several files that handle different aspects of data management, particularly when interacting with the database. Here's a breakdown of the files:
+-- 
+2.50.1 (Apple Git-155)
+
