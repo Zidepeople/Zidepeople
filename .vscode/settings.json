@@ -12,5 +12,9 @@
         "**/.github/workflows/*.yml": "yaml",
         "**/.github/workflows/*.yaml": "yaml"
     },
+    "problems.exclude": {
+        "**/.github/workflows/*.yml": true,
+        "**/.github/workflows/*.yaml": true
+    },
     "github-actions.workflows.pinned.refresh.enabled": false
 }
