@@ -8,5 +8,9 @@
     "search.exclude": {
         "**/node_modules": true
     },
+    "files.associations": {
+        "**/.github/workflows/*.yml": "yaml",
+        "**/.github/workflows/*.yaml": "yaml"
+    },
     "github-actions.workflows.pinned.refresh.enabled": false
 }
