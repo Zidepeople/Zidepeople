@@ -1,0 +1,584 @@
+f7d5a719 Clarify clock-in PIN submission feedback
+6dc8f8c4 Fix booked payment verification and post-pay hold finalize flow
+16018f3a Stabilize zider tracking map to prevent reload blanking
+091980f6 Add activity tags for job type and posted/done state
+fac5d794 Reconcile persisted selfie before showing upload failure
+c734b827 Add camera update debounce logic and position change detection for map providers
+a397b21a Use completed jobs label and keep count fully visible
+197a9882 Fix booked online payment init fallback and show posted job in applicants
+221b6c8a Improve business address field keyboard-safe UX
+af475f8d Simplify selfie onboarding upload flow
+a13e4f16 Lock iOS Google Maps versions for iOS 16 support
+7163f6e0 Keep completed tasks label/value on one line
+c56a1bfa Harden address suggestions overlay keyboard-safe positioning
+23f23c01 Increase business registration number input text size
+16ac045f Stabilize zider clocking map and update call action labels
+57092a43 Wire business list Try Again to reload data
+06ae2ff5 Harden selfie upload reliability on slow networks
+829d9b67 Add view more full job details in application screen
+161a86f1 Show accept action on application details before booking
+cf61513d Route booking online pay to exact Paystack checkout
+385db4df Simplify confirm payment breakdown rows
+1c36f558 Change active applications tracking color to purple
+36377220 Refactor suggestions initialization to use a non-growable empty list
+cf4847b0 Merge branch 'chore/deadline-fix-squash'
+2c802fa9 Fix deadline posting flow with midnight fallback schedule and summary visibility
+52bb53bb Update job overview screen to display deadline alongside schedule and improve messaging for no additional schedules
+95843058 Implement deadline fallback schedule and adjust deadline handling in job posting
+039a05b1 Set default start time to midnight and adjust end time initialization
+b90fa956 Add support for deadline-only job pricing without explicit schedule blocks
+df0798f1 Add screening questions section to job overview screen
+9197860e Move work mode selector back to top of job posting form
+cd4083d2 Harden onboarding NIN progression and selfie upload reliability
+9276cd2a Implement keyboard-safe overlay address suggestions with debounce
+1892b990 Hide business address input when using home address
+44d148ad Remove duplicate iOS face detection channel implementation
+f168a53c Wire bulk online booking payment and strengthen wallet confirmation prompts
+5373e45f Add bulk booking payment flow and top-up amount prefill
+2080c582 Refine work actions copy and fallback schedule resolution for clock-in
+285319c4 Show clear normalized transaction status badges in wallet history
+8fc4d1c3 Update booking payment label to Pay Online
+689c970c Remove bank transfer from booking payment and route pay online to Paystack flow
+00e7369e Update onsite start PIN copy and sync related mobile UI/provider changes
+0fb1fe37 Rename activities to Quick Tasks/Cover Roles and add job type tags in My Jobs
+8eb57124 Include scheduled jobs in activity overview booked count
+008f80f0 Add applicant home card for active application status
+0f876d24 Route zider app details to clock-in and prompt poster rating after clock-out
+0e1d9f0b Add skill filter to local talents list and enhance dropdown layout
+9312e1f8 Clarify poster PIN verification flow copy
+da34609a Remove dummy tracking names and use real assigned zider data
+bac88bdf Block sensitive account/phone details in job chat client flow
+dd21b481 Align start PIN instruction with poster-confirm flow
+f226806d Show true recent wallet transactions and require payment method selection for booking payment
+648d574a Use PIN-only identity instruction and hide hashed pin values
+24f5bcfc Refine pre-apply questions handling
+c54304e0 Add job poster display-name options with validation
+3e3b0237 Refine booking confirmation copy and gate calling before payment
+817ac9eb Exclude signed-in user from local talents list
+f715a149 Add payment confirmation prompt and lock calling until payment
+86e5a61a Clean up Book Zider UI: remove subtitle, hide button when unavailable, update finalized text to Booking Confirmed
+2792f3a8 Move Open Booked List to AppBar; remove from bottom bar and profile sheet; add offer price row in profile actions
+4fde56a1 Fix address suggestion dropdown not showing due to Transform.scale overlay desync
+d394e664 Harden selfie verification flow across onboarding paths
+26033309 Bump app build number to 94
+33cadbac Harden app lock unlock flow and settings controls
+7970dca7 Fix pricing type persistence and application label fallback
+0bc93d16 Add app lock setup and unlock flow
+840a411f Fix stale identical min-max price range on services
+9ee7d409 Hide completion percentage card when admin has approved account
+d8ee485d Fix completed tasks text clipping in user info header
+8a94a423 Fix first-time other service navigation bounce
+1f6f7d01 Use backend points summary for daily check-in
+5b04da66 Use booking_stage only in booked screen state logic
+25caad50 Add daily check-in to points earn list and totals
+b4167c13 Use booked aggregate endpoint with unified booking stage
+49f38ad5 Refine optional pre-apply question flow and summary
+61c5fc78 style: reduce gender preference dropdown text size
+db64ef55 Add selected vs booked tabs to booked ziders flow
+3cb66bfc fix: disable booking hold confirmation for invalid candidate stages
+620d76bd Show selected candidates in booked list before hold finalization
+a83f1d58 Show PIN pending/requested/verified in booked ziders
+9db02724 Add clocking map and status context to booked ziders
+1ffc9a46 fix: make apply screen fully scrollable
+d0769098 Fix activity overview booking-match status correlation
+0bf2bc7d fix: stabilize job chat screen and add booked-only calling
+15cb00d8 fix: remove booking hold tier and gate job chat by booking
+77c78fcb fix: only lock reference after actual submission
+a17e87a8 fix: harden selfie upload reliability on slow networks
+c04ac280 Fix hire signup routing by excluding /hire-type from auth redirect
+08812904 Fix analyzer issues and harden error handling across app flows
+db3d839c Harden job status parsing and counter-offer round label
+4909b2b8 chore: update version to 2.0.43+93
+755139d2 Redirect reference confirmation completion to home
+3faf74a2 fix: PIN approval polling on Zider clocking screen
+5760bd32 Add pull-to-refresh (swipe down) to booked ziders screen
+4b3f33be Fix concurrent face detection race condition that could corrupt upload file
+7f44ae1b Fix address suggestions obscured by keyboard - flip direction up when keyboard open
+5d20aeb9 Reduce business registration label text size
+826e7cf9 Prevent reference resubmission while verification pending
+2ca59fb7 Fix selfie crop file format consistency on Android
+4110a2b5 Fix selected/booked status filtering for poster flows
+eb2fc2ce Fix selfie upload false failures on mobile
+015dbb15 Fix selected-booked visibility and counter-offer UX guards
+4cc7eb23 Fix activity overview employer status routing
+32cddef4 Add pre-apply Q&A trust flow in apply and match popup
+4b374271 Fix adminApproved → posterApproved enum references and remove duplicate set entry
+47ce6529 Bump build number to 92
+c82d6bfe Regenerate build_runner outputs
+b10097ae Wire all candidate actions: Keep/Reject/Select/Counter/Book with sectioned list and Book Candidates button
+8ed09b46 Guard counter-offer to valid selection statuses
+3f2165ec Remove placeholder years-of-experience from candidate popup
+99347b81 Update candidate selection: price on cards, Select/Counter/Book actions, confirmation dialog
+03d8a682 Show accurate job proximity on apply screens
+116e9925 Add explainable match scores for posters and applicants
+112f001b Improve job matching lifecycle UI: polling, refresh, status mapping
+fdabbffa Refine candidate sheet details and simplify match cards
+199aefd8 Fix match profile sheet fallback via candidate details
+e1ce3912 Fix candidate label pluralization in match selection
+b147c922 feat(matches): add pull-to-refresh on select candidates screen
+a6ec791c Make hybrid tracking path explicit for poster and zider
+b689bbbb fix: remove admin-approved app status usage and accept wording
+9087fbaf fix: align task status parsing with poster-only approvals
+be23ac5e fix: align match decision labels to accept/reject/keep
+fb807a75 fix: align job card pricing unit with selected posting model
+d93c44ec fix: unify matching flow routing and resilient candidate actions
+e6d69fc3 fix: show already-suggested dialog when re-tapping suggest price
+ca6323c2 fix: preserve posting state and update pending ziders label
+1433a33f fix(location): treat allow-once permission as valid access
+0f29327d chore(apply-ui): rename recommended labels to system range
+5ff59240 fix: reconcile already-applied state after apply submission
+33ac0a6c fix(apply-range): use system min/max instead of poster budget
+97be702e fix: show job poster offer instead of market price in suggest price sheet
+374b06b6 fix: correct required units label pluralization
+947316df chore(pricing-ui): clarify service fee includes hours and users
+a12b9759 fix(pricing): include total hours in service fee estimate
+f78a71ec fix: persist selected address city/state for job location
+832925a6 fix: allow deadline-only schedule in hire form
+58e803e3 fix: reconcile selfie upload failure with persisted profile picture
+d762d76f fix: show explicit duplicate phone signup message
+c0d961e8 fix: route hire signup through hire-type chooser
+88b536f9 fix: add missing BuildContext import to cart_notifier
+e5159935 Change Approved badge to Verified on candidates, block unverified users from applying
+aea9405d feat(scheduled-job-details): add account verification check before navigation
+8bbe024b feat(action-button): enable button based on job status and account verification
+1b80f63d feat(auth): add verification check for user accounts with dialog prompt
+0f1c4b35 fix: matching screen navigates to view-candidates instead of find-nearby-ziders
+ce0fd61a fix(matches): open candidate profile with correct match id and decision actions
+52f5b18a feat(navigation): simplify match viewing path for jobId
+0bbd2a6e feat(tracking): use profile avatar map markers
+b6029ba9 Allow any offer price: remove min/max enforcement, show range as recommendation only
+cd351122 Auto-refresh view matches screen every 30s for real-time applicant visibility
+e0dd2b9d Auto-refresh my jobs list on foreground resume and every 30s
+f28813d3 Fix: recognise 'matches' job status from backend; show View Matches not map
+345c76cc Disable Suggest Price after applying, misc UI fixes
+fee326d6 feat: add pull-to-refresh on ziders nearby list
+8868b3cf Refresh pending/matches counts immediately after job application
+0557740f fix: decouple suggest price from apply, add Already Applied popup
+ba7046a0 Unify job application success copy across flows
+5fe62ca3 update suggest price UX: new prompt text, market price label, thank-you dialog
+aecb843f Preserve selected job state in posting payload
+ddc539ca Preserve selected job service without fuzzy remap
+26990b41 fix: force dark status bar icons on light screens
+93a35b4a Show job posting failures reliably in UI
+cad2fb65 Refactor unit display logic to handle hourly rates and calculate total hours from schedule details
+2ef31475 Scale frontend service fee preview by zider count
+64b0e296 Allow business submit for non-employer ziders
+af030531 Show business address suggestions above keyboard
+03c6979f Reduce business registration label text size
+44e1f7f7 End no-business onboarding at verification popup
+13704848 Remove state from zider location and work profile
+97fbf981 Fix selfie capture blank screen flow
+a9d39d37 Stabilize post-signup profile completion prompt
+8ae46bb8 Refine type selection screens with back navigation
+79131ccc validate referral code against backend immediately in bottom sheet
+e73ef7b0 Remove logout snackbar message
+addb4a70 fix: remove time display from job cards on offers screen
+33904724 refactor: add missing dio import in company and trainings providers
+519d401b fix: NIN -> proof-of-address and selfie -> reference navigation during signup
+d3ffee54 refactor: remove all offline cache code from mobile app
+c6400b55 refactor: remove offline caching and transient network error handling from profile and ticket providers
+2c3043ef refactor: remove offline caching and transient network error handling from task and trainings providers
+daaf4537 Refactor providers to remove offline caching and transient network error handling
+e080080d fix: rename cover-staffer to cover-staff across mobile app
+775aa94c chore(types): standardize cover staff label to cover-staff
+c515deb3 feat: show BUSINESS account type for business signups
+7f11e9b5 feat: add hire type selection screen (Quick Task / Cover Role) before email signup
+a0be3634 feat: restore Zider type selection screen before email signup
+93114e59 Fix: preserve Dio interceptors after authorize() + show actual error
+1540f8a8 fix: stabilize business onboarding widget tests and referral code init
+e37e9697 fix: restore showSnackbar so signup/auth errors are visible to users
+17db0cb2 refactor: implement transient network error handling across providers
+ec241e02 refactor: remove all toast/snackbar bottom popup notifications
+3e9e34f8 Fix 'unable to load account' for returning users
+fd83cce6 Fix onboarding flow after NIN save
+a80de94d chore(release): bump build number to 88 and fix onboarding test assertions
+c8eb81c4 refactor(update-nin-screen): change label text for NIN input field
+329202c5 update NIN input label copy
+51cabf8e fix(identity-flow): prevent NIN success refresh race loop
+f81cc713 add shared_preferences direct dependency
+271a77c4 refactor auth session init and logout cleanup paths
+238bc240 refactor(auth): drive navigation from auth state notifier
+e552d395 chore(ios): bump 2.0.43+87 and finalize release build setup
+43e32934 fix: correct string interpolation in upload logging for proof-of-address document
+c6c95cfc feat(identity-flow): enhance logging and verification state updates for onboarding steps
+91bb43f6 test: add guest protected action resume regression coverage
+45bf93a1 fix: remove state dropdown from registration address screen, add auth action guard
+bee7da90 chore: bump version to 2.0.42+86
+90d5c28c fix(mobile): separate login from onboarding progress and harden registration resume
+7ed28b5c fix(project): update framework references and configurations in project.pbxproj
+5df7b0a4 fix(onboarding): always continue from NIN to proof-of-address
+ee6c1bcb fix(login): always navigate after sign-in; account load no longer blocks PIN flow
+71c663b8 chore: bump build to 84
+2293b0de fix: show real error message on NIN update failure; bump build to 83
+0a903e93 fix(auth): remove ref.invalidateSelf() from authorize() to fix post-login account fetch race condition
+92ac5090 fix(auth): block home navigation until account profile loads
+573c60fa fix(registration): enforce continuous ID verification flow
+7790d55b fix(account): harden account fetch parsing and retry post-login
+f67256ff feat(auth): add back button on login PIN screen
+02b9ccf4 chore(release): bump build number to 82
+e5ddbf04 fix(flow): harden onboarding navigation and error feedback
+f7160b15 chore(profile): remove home address save button
+7c53a5c2 fix(account): tolerate unexpected /account/user payload values and avoid init crash
+78d87d5f chore(release): bump build number to 81
+eb57acf2 fix(registration): continue gender flow even if account refresh fails
+95068a5d fix(auth): do not block PIN login on post-signin account refresh failures
+c521a117 fix: invalidate accountProvider before fetching in gender submit to get fresh data
+f00aecb1 chore(release): bump build number to 80
+68b9cc21 fix: do not invalidate/delete lastLoggedInUser during sign-in flow
+965da437 fix(imports): remove unused imports from various provider files
+1842e730 chore(release): bump build number to 79
+81bcc8d7 fix(ios): use static frameworks for CocoaPods to stabilize archive builds
+53515491 fix(auth): preserve auth_prefs during sign-in to prevent PIN screen null-user redirect race condition
+0f1f49d1 fix(registration): stack first name and last name fields vertically
+a9f88bcb fix(registration): fix gender selection continue button - show error instead of silent fail
+b0e0674e fix(auth): fix welcome back screen layout - back button, centered footer, Sign Up capitalization
+86c21da6 fix(auth): pass with_phone flag for phone-number PIN sign-in
+6644c05c feat: implement offline caching for posted jobs
+d1966d19 feat: add offline cache fallback for shared courses and services feeds
+1853b3ea feat: add offline cache fallback for profile jobs stats and trainings
+2ce0be97 feat: add offline cache fallback for banks profile and user stats
+8141ad33 feat: add offline cache fallback for app check and wallet feeds
+4b816210 feat: add offline cache fallback for offers notifications and job detail
+b29220f0 feat: add offline cache fallbacks for jobs account and wallet
+86cb3bc7 feat: add 10.23% service fee tier for <=10k amounts
+a28e18d3 fix: ensure try-again actions trigger real data reload
+8005d0ab fix: normalize job match ids for profile view and retry
+4bfbe8d1 fix: use isSuccessful check in account repo, hide No button when Yes selected, scroll address field into view
+236ef886 feat: save and resume onboarding registration progress
+46d717bf style: reduce business registration number input text size
+7b096e47 fix: show Thank You popup immediately when user selects No on business screen
+3807aa6d fix: enforce session isolation across logout and account switch
+1c26d9e0 fix: navigate to add-reference after selfie upload instead of getting stuck
+916583af fix: show Apply Now for non-posters on matching screen instead of Track Jobs
+c0a97477 fix: show per-person price on home job cards
+67f80a07 tweak: reduce home address helper text and field icon size
+ce785bd7 fix: ensure apply success acknowledgement appears reliably
+53a12cd4 fix: remove offer price limitations — allow any price when applying
+7a24d3f4 Add poster close-job and draft status actions in my jobs
+7169f3d1 fix: show deadline in job summary when user picks deadline instead of schedule
+b2f0441d fix: clarify pricing labels and handle already-applied error properly
+49a3b36b fix: avoid false location-off startup banner
+bb5a0d32 fix: correct multi-user/unit subtotal and service fee in form and job summary
+fdd268a9 feat: add custom unit name field to per-unit job form
+1d21c074 fix: return job form back flow to service list screen
+b844dc19 feat: job status screen audit — 5-tab system, candidate card redesign, ₦ fix
+98cb0f8b feat: use from/to address fields for dispatch rider form
+7902aa99 feat: use camera icons for photography and videography categories
+0baf93d5 feat: add deadline time selection in schedule section
+1bba3c9e fix: center sign-up and terms footer on welcome back screen
+d4d60761 fix: prevent jobs retry flow from failing after successful retry
+79a56e5b fix: harden mobile jobs loading resilience and env domain fallback
+84b7ea2a fix: harden mobile jobs loading with fallback retry without origin params
+1fdf94a9 fix: align local pricing math across hourly/day/unit/week/month/fixed models
+c21de06c fix: reset shared jobs filters when leaving offers screen
+ecd8376b fix: ignore schedule hours for per-unit pricing and sync people-needed payload
+446ac4b7 fix: rename lifecycle label and prevent matching screen refresh flicker
+8b653bb6 fix: ensure status bar icons are dark/visible on white screens
+947d9221 chore: remove unused import in dio_provider, fix brace style in shop registration
+aaa76a0d feat: show category as title and numeric count for ziders needed in job summary
+4bad361a feat: improve price summary to show per-zider offer and total for all ziders
+a7710e90 feat: show live price × candidates/units summary with service fee in budget section
+7c36cdb2 feat: add deadline option to schedule section in job posting form
+42756b5b fix: show saved jobs count in activity overview from local drafts
+49a31a4d fix: remove 'Minimum: 2' helper text from multiple candidates input
+9dd37d6c feat: add try again button in hire screen on load failure
+1fc64924 feat: add emergency call functionality across job detail screens
+519202b1 fix: prevent unintended navigation from tracking and foreground notifications
+561b8a4c feat: add unified Job Lifecycle System with real-time sync
+ad56297e feat: add PIN-driven job start UX for zider and poster
+f23e7675 feat: add optional deadline selector below schedule section
+6442b498 feat: business verification onboarding + 6-step verification screen
+bcf6a0c5 Tighten address section spacing in profile form
+8a6907e3 Fix selfie onboarding navigation to add reference flow
+0c1b6364 Update no-business registration flow to verification status
+8d719420 Add emergency call trigger to poster and zider matching screens
+b39036f7 Add client-side 10-minute clock-in gating and messaging
+9381e80e Refactor job posting and matching screens for improved clarity and functionality
+f6f92f7e Keep one supervisor per task
+7c0071b9 Let poster reject unselected matches
+f8064d3a Make signup Login prompt bold
+e4723de3 Apply flow: skip date selection for one-day jobs and shrink selected-days CTA text
+b72ca3ab Profile: ensure new posted jobs appear in Pending activity count
+ce83cda8 Jobs: remove Scan QR code action from matching screen
+ab318d35 Auth: remove phone sign-in entry and add signup + terms on email login
+81aad147 UX: show startup banner when location permission is off
+a88ea011 Fix iOS: stop repeated location permission prompts on app open
+0a0cc18d Fix: saved jobs in profile activity now shows saved drafts, not pending jobs
+b2adc224 Minor fixes: unused import, rethrow, param order, const cleanup
+352c3b24 Redesign job summary screen: modern cards, payment breakdown, service fee
+776e4192 Bump build to 2.0.42+75
+75708e69 Fix job activity tracking and status routing in Activity Overview
+e8a8c1c5 Remove My Portfolio section from profile screen
+6df56c17 Remove Create Post FAB from Career Support Hub
+e2e58eee Fix urgent job pricing display and input behavior
+861c4a43 Fix post job navigation, improve startup performance, bump build to 74
+6ae1f251 Change login PIN switch-account CTA to sign up
+15cea233 Stop forced login redirects from global 401 responses
+e697c764 Disable icon tree shaking for iOS and IPA builds
+9bbcdcbf Fix login PIN screen timeout after logout
+05532493 fix: show real signup errors instead of network fallback
+3256de33 fix: never show Zidepeople as job client name
+da1a7765 fix: route logout and switch-account to PIN login flow
+bf307cf3 Add persistent matching continuity across app
+e78471b9 Center align error dialog title text
+2ea63e03 Block posters from applying to their own jobs
+ee091e0f feat: add Stop Matching options sheet on matching screen
+b674d13b fix: back button on matching screen now navigates back instead of showing stop-matching options
+86d5fc81 fix: enable min/preferred/max price fields for delivery & logistics jobs
+3769437c Improve Stop Matching controls with pause edit and delete
+bf1ce5dc fix: prevent blank account screen after inactivity
+3f7ed07f Allow leaving matching screen and load profile matches list
+20592cde Mask poster names in public job surfaces
+c34531e1 Job posting: change Back to Home to View Job and open posted job details
+5eb28900 Job posting flow: add summary and confirmation before matching
+3bb7abf1 fix: route post-job directly to matching screen
+5bbd3e9c Job posting: show schedule duration beside each time slot
+cf06eb22 Drop Points: expose shop registration and show local shops coming soon
+dfd77fd3 feat(ui): improve candidate hiring labels on job cards
+2be1b930 Adjust career support post sheet top spacing for back button and form
+9ad05b28 fix: unblock iOS IPA build for transporter
+bb8a2119 fix(profile/auth): harden candidate route parsing and post-signup redirects
+b8a4c671 fix(flows): harden apply/match/booking routes and lifecycle safety
+2059a487 fix(job-posting): prevent double-submit on required fields step
+8dbbf7c6 fix(job-payment): prevent invalid/repeated payment submit
+2db663cf fix(notifications): handle external action links safely
+b205335d fix(auth): harden post-login redirect targets
+a9b47a45 fix(nav): Section 2 - pay_status dead-end + bottom nav active tab
+1b4d5cf5 Section 1 UI audit: image fallbacks, text overflow fixes, pull-to-refresh on key screens
+95e01199 Harden job lifecycle: type-safe fromJson, try/catch on all API calls, user-friendly error messages, error logging
+de349e64 fix: defer wallet payment at posting; add low-balance warning + top-up on payment page
+3b5cd69d Fix type String is not subtype of int: replace unsafe as int casts with int.tryParse
+249043cf Add multi-step drop-point shop registration flow (4 steps + success screen)
+4c1a7adb Schedule preview: show duration and validate end-before-start
+ab677bbe Production security hardening
+5f2e0561 All services: move Bills & Recharges before Courses & Trainings
+913364f6 Redesign Create Career Support Post form — social-style UI
+7f8599b4 Create career support post: rename to Career, add back button, push content down
+7b0d7dd9 Home screen: Quick Tasks and Cover Roles open hire screen
+9c80e9ae Refine profile verification badge and task count line
+0ead6dad Update reference submission messaging and verification progress UI
+90ede4e9 Auto-refresh verification status while waiting
+3981ae10 Fix home screen tab navigation, onboarding/business screen improvements
+4c69b83b Adjust signup login inline spacing
+b7ac36f1 Enforce per-person pricing with multi-candidate hiring messaging
+af7e0611 Restore map pin link underlines in hire details
+fcb32533 Update service list selection screen
+8accbe6b Update hire details screen behavior
+4c8f6d95 Refactor navigation routes and remove unused screens
+b7edc58d Add login prompt to signup choice screen
+f2359803 Adjust alternate doc upload navigation flow
+e09414d0 Refine business profile validation and form inputs
+5354284e Redesign onboarding home address action layout
+0c96b7ac Refine onboarding form background and keyboard behavior
+958b5a93 Handle duplicate signup accounts with sign-in popup
+87a72eb8 Fix offers job status filter to load jobs
+1c25da5c Remove adaptive verification progress section
+d03b835e Update PIN dots to brand purple
+6cbccd93 feat(permissions): add NSContactsUsageDescription for contact access
+a8004f80 fix(match_approved): remove unnecessary import for profile providers
+e2c8ce22 fix(job-posting): sanitize outbound payload fields before submit
+329760a1 feat(logistics): add Zide Drop Points service flow
+51e093fc feat(services): add Career Support Hub with image-based community giving
+54ac2b47 feat(rating): add contextual smart in-app review triggers
+634e0500 refactor(feedback): streamline feedback event types and conditions
+8e61feb7 fix(onboarding): route reference→business, thank-you dialog, remove biometric text button
+5bed9eb4 fix(wallet): auto-refresh NIN state and continue action after update
+b0d0e540 feat(navigation): update redirection after adding reference to user-business screen
+4b89dfaa fix(wallet): allow top-up without NIN; keep NIN for withdrawals
+172ea740 test(airtime): trim widget-heavy airtime test coverage
+eeb571ce feat(interview_prep): group interview questions by type and update state management
+f8f0180b feat(interview-prep): render grouped technical, behavioural, and role-fit questions
+53c92c21 feat(cv_review): implement usage tracking and paywall logic fix(settings): correct title from 'Profile Stories' to 'Profile Story' fix(task_stats): display placeholder for empty stat values
+e16988cd feat: AI interview preparation screen with questions, tips, and paywall
+26e5b577 fix(rewards): remove fixed heights causing card overlap on referral dashboard
+66cc99ba fix(chat): always show own community messages on the right
+596a8d6f feat(profile): add WhatsApp support option to contact popup
+0051b202 fix(jobs): show posted custom unit labels on cards
+b89c1f06 fix(registration): restore adaptive verification progress section
+dd2fde69 feat(profile): add interview preparation to support resources
+7e16aa83 fix(account-screen): change _isRefreshing to final for better immutability
+fb7cd0a1 feat(services): add career development section
+07748184 feat(job-posting): add unit name info hint in pricing section
+072629b9 feat(contact-picker): implement contact picker for phone number selection
+d547b945 refactor: remove booking feature and routes
+40e9e530 feat(airtime): finalize airtime/data purchase UX and routing
+147424fb fix: require units only for per-unit pricing
+7da0177f feat(reference): add self-reference guard and confirmation flow UI
+d0df97fa fix: make registration completion strictly admin-driven
+d73f17b6 Adjust spacing between PIN dots and keypad
+5286327a Refactor Airtime Models and Providers for Manual JSON Parsing
+ce685c25 feat: add new widgets for data plans, network badges, promo banners, quick amount buttons, spin-to-win modal, and wallet balance card
+55f3ef06 fix: improve selfie upload progress and finalization state
+4ce5e8c8 feat(otp): premium UX — stable layout, autofill, shake animation
+336e2e5b feat: refine onboarding form UI and simplify home address actions
+3f8f8c60 feat: remove adaptive verification progress section
+0dfda6c4 feat(profile): unified dashboard + wallet UX improvements
+3733ef52 test: align registration flow tests and fix progress chip overflow
+cc9280d1 chore: unify business registration wording across flows
+fa2921e8 fix: reduce false blockers in job posting validation
+f576908f feat: decouple unit requirement from pricing cadence in hire flow
+f42158c0 feat: implement per KM pricing validation and update UI behavior
+2e4605e5 feat: prompt urgent mode when max offer exceeds market guidance
+b6cc3aa6 fix: relax hire budget validation to allow partial inputs
+30b1e172 fix: enhance refresh behavior and scrolling in hire screens
+9efe8918 feat: require min preferred and max budget values above zero
+1a980f80 feat: refine hire pricing model selection and guidance behavior
+edc3bc57 feat: add pull-to-refresh behavior on hire screen
+406a0a14 feat: add volunteer quick-task option and better volunteer icon
+164069f7 fix: align hire form pricing model with backend taxonomy
+f82aca91 ui: highlight selected subcategory and service in hire flow
+38c7a9bc chore: commit pending unit job application screen changes
+f09ba657 fix: surface exact job-post validation errors instead of generic Oops
+0dcd17e5 fix: add duplicate price suggestion handling in job application process
+458036d5 fix: resolve 7 job posting bugs blocking/silently failing job creation
+e965fa5e fix: settings 'Tell us about your experience' always opens native review dialog
+028d853d fix: invalidate taskStatsProvider after saving job draft to update Activity Overview saved count
+e976fa29 ui: remove 'only' from Suggest button label in skills & tools
+5f8cbe98 fix: always show ₦ sign beside placeholder on withdraw amount field
+9c36c1ff fix: always show ₦ sign beside placeholder on top up amount field
+c55597d4 fix: remove double-error on signup failure in signupWithEmailPasswordPhoneOrPin
+4be254ee fix: prevent first-attempt email login from bouncing to sign-in chooser
+403a2a3f fix: prevent OTP keypad from shifting down on each digit entry
+da7da4b1 ui: move number pad down on set/confirm PIN screens
+6aefd41b feat(local_auth): add local_auth_darwin plugin to Podfile.lock
+489be7df fix(counter-offer): send rejection_reason when poster drops candidate
+713e9085 feat(zider_accept_offer): implement counter-offer functionality with loading states and UI updates
+4569cbe0 feat(jobs_client): add submitCounterOffer endpoint for counter-offer submissions
+68e9a91b feat(job_overview): display poster's offer price in job overview card
+38248574 feat: add counter-offer status and negotiation fields to JobApplicationModel
+c38780da fix: use email+pin sign-in after signup instead of reusing consumed OTP
+a43556fd feat: show poster's offer price on all apply screens
+ea1d8b98 feat(job_post): add budget-related fields and update pricing logic
+654df53c fix: show correct min/max price range, suppress identical prices
+22f211fa fix: remove min/max price enforcement, range is guidance only
+32e7fce8 fix(budget): show ₦ prefix on price input when field has text; remove blocking range guardrail
+5af9d45d feat: implement biometric authentication prompts in PIN screens and improve error handling
+f0c77d0e chore: rename tools suggestion labels in job posting form
+9c0c066a feat: add product sharing and update auth provider flow
+239c44e7 feat(auth): add biometric opt-in after PIN setup/update
+249887e0 fix: stabilize native share sheet across app
+a195692c fix: move set/confirm pin content higher
+2e8c80bd feat: enhance UI layout in PIN entry screens and add biometric toggle card in security settings
+fa0fe00e feat: integrate biometric authentication prompt upon PIN confirmation
+2e7f0a00 feat: add biometric authentication support and settings
+713c731f fix: show ₦ prefix in top-up amount field placeholder
+c369646d feat: update bookings cancelled button navigation and add custom task request endpoint
+b96e631b chore: remove unused Kotlin compiler session file
+dfa776ff chore: add Kotlin compiler session file
+a9952fb8 app modification
+e18baeef feat(hire): direct tap navigation — remove selection state and Continue button
+473b33e8 feat: remove book call from registration flow, fix native share, dynamic per-job pricing, remove guide text
+e7079906 Remove hardcoded service data; enforce backend as sole source
+39a32622 feat: add pull-to-refresh pricing guidance reload in hire details form
+7886157b Fix offers go-back to home with outlined button
+4c6e0be5 Refresh both hire category tabs on pull-down
+8a9a1673 Use backend field-aware job posting errors in UI
+14fac368 Block duplicate and identical schedule slots in hire flow
+ba769830 Improve job posting validation error mapping
+adc45876 Improve schedule editing and slot-time validation UX
+aa240a8e Improve schedule slot validation and price hint copy
+f770b504 Update date slot validation copy
+9dfeee90 Businesses: show Featured from is_featured flag
+6d5435dc Use /store/orders route with transactions redirect compatibility
+749aee27 Business list: add gold star beside Featured label
+8181fd02 Fix store checkout routes and rename merchandise transactions to My Orders
+551cabdd Saved Tasks drafts: autosave, leave warning, resume list
+3f243e7f Use generic OTP verify endpoint for email signup flows
+eaea7b5b Apply screen: resolve default offer from min/max/preferred
+7e38a56d Fix email OTP verification fallback and surface real errors
+67584e5e Standardize keyboard behavior across auth form screens
+ace5b6a3 Make login PIN screen Sign up link bold
+84e71f58 Rename 'Base price' to 'Offer' on application pricing summary
+bc2bfadf Multi-day apply flow: day selection chips, live price scaling, schedule_id submit
+1f97a83f Change 'you can go higher' to 'set your offer' on apply screens
+de319290 Show duplicate toast and disable Suggest Price after first submission
+be7b4676 Use backend driving distance on jobs home cards
+3a98fe46 Add CV-powered cover letter generation feature
+7e82e4c6 Add 'Help me write' AI bio assistant to About Me screen
+7ca55c1d Add StatusBarWrapper for adaptive status bar icon visibility
+be006583 Reduce size of 'unlocked' label in rewards screen Stage 1 card
+e71dc274 Remove booked from opportunity funnel, show completed only
+9e1817bb Reduce welcome text size and add comma on login pin screen
+ee13630a Fix Job Summary screen spacing and visual hierarchy
+ff809370 Refactor pricing model handling in hire details screen and service payload
+4579e724 Add cover role experience dropdown, volunteer category, and OTP pinId reliability updates
+819bd420 Stabilize OTP screen layout during native keyboard input
+6bd7d633 Use native in-app review only for settings experience prompt
+e93611f3 Fix naira baseline alignment in wallet amount fields
+f0d35247 Polish LoginPinScreen spacing and username hierarchy
+d4276b00 Update screen title in AllServicesPage and bump version to 2.0.42+65
+550bd2a0 Fix home quick task tabs to open hire screens
+3130a13d Bump version to 2.0.41+64
+e8476d5f Redesign SigninScreen: remove logo, top-anchor content, left-align headings, fix terms at bottom
+a192e70f Right-align switch account row on LoginPinScreen
+3ebfc6cd Redesign LoginPinScreen: remove logo, top-anchor content, left-align account row, Spacer+keypad at bottom
+fb971c77 Fix OTP keyboard shake: store KeyboardListener FocusNodes, avoid redundant setState
+d6791a52 Harden CV review upload with retries and clearer service errors
+f5e090b9 Relax application offer caps and default preferred to min minus 1000
+50e0aa8f Allow posting with suggested addresses and center map confirm text
+45fb5362 Update profile support resources and CV review labels
+d7338e6c Restore location icon for single-location application field
+f2a03a53 Align naira prefix with top-up amount input
+ef155708 Add debug tracing for settings app rating flow
+df4d819d Fix app rating tap to reliably open review or store
+4b228daa Remove change password option from Security & Privacy page
+0e705cc3 Fix home service widgets navigation taps for non-filter tabs
+5436a11a Restore profile score navigation to stat-list and root route handling
+703746d5 Improve Add Other form UI and bind custom service names to job titles
+6505e2bc Fix application min/max range resolution using pricing bands
+cf65310a Fix offers load failure by sanitizing filters and retry fallback
+51934921 Fix jobs home visibility and iOS face detection handler linkage
+e15fda03 Fix referral deep-link parsing, cashback consistency, and hire-route back navigation
+9258b889 Mobile UX compatibility hardening: keyboard-safe forms, overflow fixes, and responsive action visibility
+d77d90c5 chore: downgrade Android minSdkVersion to 23 and update app version to 2.0.32+51
+2fc58975 Bump version to 2.0.40+63 for TestFlight build
+42deb2f5 Reduce Yes Apply button font size to 13 to fit on one line
+7b695883 Replace iOS ML Kit with Apple Vision framework; iOS floor 15.5→15.0
+2bb760aa Lower Android minSdk to 23 for broader device compatibility; bump version to 2.0.32+51
+7521e544 chore: downgrade minimum SDK versions for Android and iOS to 24 and 14 respectively
+622bcff5 Route Connexa ticket promo to in-app tickets screen
+930c800c Fix rewards milestone completed tasks metric
+ecd49a13 Fix Android Connexa tickets loading by unblocking account init
+40249ea4 feat(tickets): update ticket providers to use connexa backend URL
+7d3257c6 feat: scanned banner, cache clear on logout, foreground refresh, cleanup
+908634e7 feat: type-aware info rows on ticket detail screen
+fca6ace5 fix: exact ticket type matching for all 8 Connexa pass types
+b16d54b4 feat: type-aware ticket display for all pass types
+638f0969 feat: offline ticket cache, all-tickets list, and pull-to-refresh
+1245a164 fix: point ticket providers at Connexa backend
+9fb492b1 feat(inspector): add job pricing and application inspectors to debug panel
+3d2532b7 feat(logging): implement AppLogger for structured logging across job application and wallet processes
+03409164 feat(banner): add AppleRelayEmailBanner to notify users about Apple Private Relay emails
+f5f9fb31 feat(apple_relay): implement utility for detecting Apple Private Relay emails and add related providers
+e663546a feat(jobs): enhance error handling and loading states in job-related screens
+f350da14 feat(auth): enhance Google sign-in method to return nullable account and improve error handling in sign-up and application processes
+21a0e109 feat(referral): refactor ReferralScreen to use ConsumerStatefulWidget and enhance referral process functionality
+7603ab94 feat(referral): update referral reward descriptions to clarify two-stage earning process
+fce8387f feat(referral): update referral reward structure and descriptions for clarity
+696d72aa refactor(rewards): improve code readability by formatting and restructuring expressions
+8ad0543d feat(referral): enhance referral code validation and add referral stats to dashboard
+1b6e0d82 feat(withdrawal): implement weekly withdrawal limit and enhance validation messages
+2f8afd9e feat(signup-bonus): implement local storage and dialog for signup bonus claims
+64802fca feat(validation): sanitize validation messages in job posting screens for improved error handling
+e717a334 Refactor error handling across multiple screens to use sanitizeError function for consistent user feedback
+526a1b72 feat(apple-relay-email): add email prompt screen for users after Apple sign-in
+67d79735 feat(hire-details): add delivery address state management and validation
+3f32a170 feat(job-posting): normalize access mode and job type in serialization
+acb5ee66 feat(rate-user-sheet): shorten label for 'Report to Customer Care' button
+82cfb06a feat(rate-user-sheet): reposition 'Report to Customer Care' button in rating sheet
+abfd00a5 feat(rate-user-sheet): add 'Report to Customer Care' button in rating sheet
+d47fcdc4 feat(view-matches): add status guide for candidate selection in matches screen
+6336497e feat(job-application): add status tracker and next step hints in application status card
+bbb89f74 feat(booking-hold): implement booking hold summary and confirmation screen, update related providers and models
+0cefe549 the matching screen what is currently there and with the new implementation, what is to be worked on, they should be able to see users that apply, see their profile, approve, reject or keep pending, everyone gets a notificiation on the status, once booked, the user selected will be prompted to a screen to aprove. then they clock in when the job starts or is about to start(we have a clock in screen), look at it too, then when they are done, they clock out, af
+58e81b69 mobile: wire pricing bands by model and finalize frontend flow hardening
+4008b64b feat(hire-details): add route estimation functionality and UI updates for delivery addresses
+c8098d51 refactor(jobs): remove remote and delivery job types, update related logic in job handling
+75241571 feat(offer-utils): implement utility functions for offer validation and scheduling, add unit tests
+80fc6be3 feat(attachments): enhance error handling and logging in estimate calculation feat(jobs): add utility functions for job schedule validation and suggested offer text
+369f9329 feat(tests): add unit tests for job application status model
+830bb6a3 feat(jobs): enhance pricing validation and error handling in job application screens
+268bebdf fix(widget): correct key formatting in OfferPriceHintWidget
+76e13723 feat(vscode): update settings for GitHub workflows file associations and problem exclusions
+b30d5ece feat(mobile): map no_of_service_units in job model
+7e101d00 feat(mobile): add smart offer hints and remove base price display

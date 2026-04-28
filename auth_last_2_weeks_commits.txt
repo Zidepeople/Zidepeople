@@ -1,0 +1,52 @@
+d19a383e Require selfie file payload for profile picture endpoint
+861bc02c Notify support on approved reference verification
+a87bc497 Enforce restricted contact/payment details in job chat
+e8d3ad10 Fix verify-docs notification recipient; add in-app notifications for reference approve/reject
+19e0aecb Fix 500 on /admin/fetch-accounts: defensive SQL + migration for missing production columns
+60a2a03d Fix ZERO_RESULTS address validation crash - graceful fallback
+73da2bbc fix: replace N+1 document queries with batch check in fetch-accounts
+305e8ca9 fix: simplify reference confirmation email, remove deep link and expiry text
+682fa0ba fix: rename cover-staffer to cover-staff and add legacy alias normalizer
+9675e4b3 chore(types): standardize cover staff value in auth service
+93bb3276 fix(account): support Business zider type tag
+3ec9d6e0 fix: replace assert with HTTPException for referral code validation
+87372011 refactor: improve logging in timed executors and chat socket manager
+a44ee0c0 test: allow optional azure settings when not configured
+30248f98 fix(tests): set minimal environment variables for old user null safety test
+e9b43321 feat: enhance account model with default values for new columns and add regression tests for old user null safety
+ea86116d fix: migrate Pydantic models from orm_mode to from_attributes (V2 compat)
+0c32f5ad fix: replace deprecated VALUES() with alias syntax in ON DUPLICATE KEY UPDATE
+3c815f24 fix: change email footer from 'Zidepeople Admin Panel' to 'Zidepeople'
+01a6b042 fix(auth): allow phone+PIN sign-in without OTP
+72cf3450 fix: update reference confirmation email subject and sender
+26d5cec3 feat: add /admin/verify-business endpoint + gate employer approval on business verification
+da89bac8 Enforce admin sender for Graph emails
+79a575f9 Fix reference email delivery sender and fallback link
+8e61dd3f Use dynamic current year in email templates
+e1fba311 Fix auth DB connection leaks and resilient sign-in lookup
+08021b2c Fix forgot-password reset email to send link only
+f83c34a7 fix: correct HTTPException syntax error in messaging.py line 74
+da3cb598 Fix HTTPException syntax: add detail= for positional message raises
+7ce49588 security: remove hardcoded credentials and key-file dependencies
+f1159cba Make GOOGLE_SIGN_IN_KEY optional — Google Sign-In no longer in use
+8622d5df Production security hardening
+871c1b49 Track reference email delivery + add resend endpoint with cooldown
+7fa13cda Add /ping and /health endpoints for app health checks
+baa91534 Fix reference confirmation links and email metadata
+410aa5fc fix(verification): step 6 = Business Info for biz users; stop at step 5 for non-biz
+88da0e34 feat(reference): enforce identity checks and tokenized verification workflow
+70e6472e test: add auth signup and otp smoke coverage
+bd059a2a fix: preserve OTP after verify-otp check so signup can still consume it
+97590a6a feat: add is_featured attribute to business creation and update models feat: implement scripts for checking email account and OTP state
+2dd03fc5 feat: add end-to-end tests for OTP flow and verification processes
+f7e4ba53 Fix email OTP invalid code: keep same otp_val on delivery exception, normalize email identifier to lowercase
+483e971a feat: enhance OTP verification by adding pin_id support and sanitization methods
+f742e0a6 Fix Termii OTP verification parsing for lowercase true
+deda1f20 Fix OTP invalid bug: store OTPs in MySQL instead of in-memory (multi-worker safe)
+fdf82169 feat: implement template alias mapping for backward compatibility and update email template references
+810ee923 feat: add email templates for account verification and welcome notifications
+0d23edd6 refactor: rename registration model and example files for clarity; update chat utility to use new support knowledge base file
+bf27ce8e feat: add registration examples and models for user and skills data
+39326498 feat: seed paperback and ebook variants with explicit pricing
+7058e1a3 feat(profile-reminder): enhance user notification process with email validation and fallback options
+044ec6b5 chore(workflows): update actions versions and add continue-on-error for uptime state persistence docs: enhance README with FAIL_ON_DOWNTIME variable details and alerting behavior clarification
